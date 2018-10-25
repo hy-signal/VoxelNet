@@ -1,6 +1,9 @@
 # Introduction
+It's an TensorFlow based inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection]  
+(https://arxiv.org/abs/1711.06396). This inplementation is based on an previous inplementation of Qiangui [here](https://github.com/qianguih/voxelnet). I made necessary modification according to the paper, and I complete the implementation of Pedestrian and Cyclist detection. Thanks to [@Qiangui](https://github.com/qianguih) for the work. 
 
-This is an unofficial inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection](https://arxiv.org/abs/1711.06396) in TensorFlow. A large part of this project is based on the work [here](https://github.com/jeasinema/VoxelNet-tensorflow). Thanks to [@jeasinema](https://github.com/jeasinema). This work is a modified version with bugs fixed and better experimental settings to chase the results reported in the paper (still ongoing).
+For the rest of the instructions, we can directly follow the setup from Qiangui's instruction. 
+
 
 # Dependencies
 - `python3.5+`
@@ -81,29 +84,8 @@ results will be dumped into `predictions/data`. Set the `--vis` flag to True if 
 $ ./kitti_eval/evaluate_object_3d_offline [DATA_DIR]/validation/label_2 ./predictions
 ```
 
-# Performances
-
-The current implementation and training scheme are able to produce results in the tables below.
-
-##### Bird's eye view detection performance: AP on KITTI validation set
-
-| Car | Easy | Moderate | Hard |
-|:-:|:-:|:-:|:-:|
-| Reported | 89.60 | 84.81 | 78.57 |
-| Reproduced | 85.41  | 83.16  | 77.10 |
-
-##### 3D detection performance: AP on KITTI validation set
-
-| Car | Easy | Moderate | Hard |
-|:-:|:-:|:-:|:-:|
-| Reported | 81.97 | 65.46 | 62.85 |
-| Reproduced | 53.43  | 48.78 | 48.06 |
 
 # TODO
-- [X] improve the performances
-- [ ] reproduce results for `Pedestrian` and `Cyclist`
-- [X] fix the deadlock problem in multi-thread processing in training
-- [X] fix the infinite loop problem in `test.py`
-- [X] replace averaged calibration matrices with correct ones
+- [] Train the network. 
 
 
