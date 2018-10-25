@@ -1,8 +1,8 @@
 # Introduction
-It's an TensorFlow based inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection]  
-(https://arxiv.org/abs/1711.06396). This inplementation is based on an previous inplementation of Qiangui [here](https://github.com/qianguih/voxelnet). I made necessary modification according to the paper, and I complete the implementation of Pedestrian and Cyclist detection. Thanks to [@Qiangui](https://github.com/qianguih) for the work. 
+It's a TensorFlow based inplementation of [VoxelNet: End-to-End Learning for Point Cloud Based 3D Object Detection]  
+(https://arxiv.org/abs/1711.06396). This inplementation is based on an previous inplementation of Qiangui [here](https://github.com/qianguih/voxelnet). I made some necessary modifications according to the paper, and I complete the implementation of Pedestrian and Cyclist detection. Thanks to [@Qiangui](https://github.com/qianguih) for the work. 
 
-For the rest of the instructions, we can directly follow the setup from Qiangui's instruction. 
+For the basic set up , we can directly follow Qiangui's instruction. 
 
 
 # Dependencies
